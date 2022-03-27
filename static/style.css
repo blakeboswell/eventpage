@@ -1,77 +1,87 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,900&display=swap");
 body {
-  background: #f0f3f6;
-  background-image: radial-gradient(50% 81%, #fff 9%, #cbd5de 82%);
-  display: grid;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #eee;
+}
+
+.header {
   height: 100vh;
-  margin: 0;
-  place-items: center center;
-}
-
-.countdown__message {
-  color: #4C6377;
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  font-weight: 100;
-  padding-top: 1em;
-  text-align: center;
-}
-
-.countdown__digit {
-  background: #eaeef2;
-  background-image: linear-gradient(180deg, #eaeef2 10%, #FFFFFF 100%);
-  border-radius: 0.25em;
-  box-shadow: 0 20px 30px -10px rgba(76, 99, 119, 0.1), inset 0 -1px 0 0 rgba(76, 99, 119, 0.3), inset 0 1px 0 0 #fff;
-  color: #4C6377;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-size: 100px;
-  font-weight: 900;
-  margin: 0 0.05em;
-  padding: 0.2em 0;
+  background-image: 
+  linear-gradient(to right bottom, 
+   rgba(76, 216, 255, 0.8),
+   rgba(30, 108, 217, 0.8)),
+   url('https://github.com/bboswell/eventpage/blob/master/img/straight-outta-caprocat.png');
+  
+background-size: cover;
+  background-position: top;
   position: relative;
-  text-align: center;
-  width: 1.2em;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-.countdown__digit:after {
-  background: rgba(16, 21, 26, 0.05);
-  box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.2);
-  content: "";
-  display: block;
-  height: 1px;
+
+.brand-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.brand { font-size: 20px; }
+
+.text-box {
   position: absolute;
   top: 50%;
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-.countdown__digit:before {
-  background: rgba(66, 86, 103, 0.01);
-  border-radius: 0.25em 0.25em 0 0;
-  bottom: 50%;
-  content: "";
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+  margin-bottom: 30px;
+}
+
+.heading-primary-main {
   display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 5px;
 }
 
-.countdown__list {
-  margin: 0;
-  padding: 0;
+.heading-primary-sub {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 7.4px;
 }
 
-.countdown__list-item {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
 }
 
-a {
-    border-bottom: 3px solid #b4e7f8;
-    text-decoration: none;
-    box-shadow: inset 0 -5px 0 #b4e7f8;
-    color: #000;
-    transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
-  }
-  a:focus, a:hover {
-    background: #b4e7f8;
-  }
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+font-size: 14px;
+}

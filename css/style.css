@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5,
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.25em;
     letter-spacing: .1em; }
   .ftco-navbar-light.scrolled {
     position: fixed;
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5,
       cursor: pointer;
       padding-right: 0;
       text-transform: uppercase;
-      font-size: 1em;
+      font-size: 1.25em;
       letter-spacing: .1em; }
     .ftco-navbar-light.scrolled .nav-link {
       padding-top: 0.7rem !important;
@@ -146,9 +146,6 @@ h1, h2, h3, h4, h5,
   }
   .h5 {
     font-size: 1.5em;
-  }
-  .navbar-brand {
-    font-size: 2em;
   }
 
   .lead{

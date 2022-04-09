@@ -4,18 +4,30 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   line-height: 1.8;
-  font-size: 16px;
+  font-size: 1em;
   background: #fff;
   color: #859196; }
 
-a {
+/* a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
   color: #4586FF; }
   a:hover {
     text-decoration: none;
-    color: #4586FF; }
+    color: #4586FF; } */
+
+
+.ftco-heading a {
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+}
+
+.ftco-heading a:hover {
+  text-decoration-color: rgba(255, 255, 255, 1);
+}
+
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
@@ -38,7 +50,7 @@ h1, h2, h3, h4, h5,
       top: 0;
       position: relative; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 16px;
+    font-size: 1em;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 20px;
@@ -76,7 +88,7 @@ h1, h2, h3, h4, h5,
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.5em;
     letter-spacing: .1em; }
   .ftco-navbar-light.scrolled {
     position: fixed;
@@ -103,7 +115,7 @@ h1, h2, h3, h4, h5,
       cursor: pointer;
       padding-right: 0;
       text-transform: uppercase;
-      font-size: 16px;
+      font-size: 1em;
       letter-spacing: .1em; }
     .ftco-navbar-light.scrolled .nav-link {
       padding-top: 0.7rem !important;
@@ -121,11 +133,25 @@ h1, h2, h3, h4, h5,
       -o-transition: .3s all ease-out;
       transition: .3s all ease-out; }
     .ftco-navbar-light.scrolled .navbar-brand {
+      font-size: 1em;
       color: #000; }
 
 .navbar-brand {
   text-transform: uppercase;
   letter-spacing: .1em; }
+
+@media only screen and (max-device-width: 480px) {
+  body {
+    font-size: 2em;
+  }
+  .h5 {
+    font-size: 1.5em;
+  }
+  .navbar-brand {
+    font-size: 2em;
+  }
+}
+
 
 .bg-image, .ftco-cover {
   background-size: cover;
@@ -134,12 +160,12 @@ h1, h2, h3, h4, h5,
 .ftco-cover {
   background-position: center center; }
   .ftco-cover .ftco-heading {
-    font-size: 45px;
+    font-size: 2.8125em;
     line-height: 1.34;
     color: #fff; }
     @media screen and (max-width: 768px) {
       .ftco-cover .ftco-heading {
-        font-size: 37px;
+        font-size: 2.3125em;
         line-height: 1.3; } }
   .ftco-cover .ftco-subheading, .ftco-cover p {
     color: rgba(255, 255, 255, 0.5); }
@@ -155,7 +181,7 @@ h1, h2, h3, h4, h5,
       bottom: 0;
       left: 0;
       right: 0;
-      background: #4586FF;
+      /* background: #4586FF; */
       height: 2px;
       content: " "; }
   .ftco-cover.overlay {
@@ -198,19 +224,19 @@ h1, h2, h3, h4, h5,
 
 .ftco-uppercase {
   letter-spacing: .1em;
-  font-size: 30px; }
+  font-size: 1.875em; }
 
 .btn {
   border-radius: 4px;
   padding: 20px 30px;
-  font-size: 14px;
+  font-size: 0.875em;
   letter-spacing: .1em;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer; }
   .btn.btn-sm {
     padding: 10px 20px;
-    font-size: 12px; }
+    font-size: 0.75em; }
   .btn:before {
     display: none; }
   .btn:hover, .btn:active, .btn:focus {
@@ -237,7 +263,7 @@ h1, h2, h3, h4, h5,
   height: 55px;
   background: none !important;
   color: #000 !important;
-  font-size: 18px; }
+  font-size: 1.125em; }
   .form-control:focus, .form-control:active {
     border: 1px solid #000; }
 
@@ -275,12 +301,12 @@ textarea {
     padding: 7em 0 22em 0; }
   .ftco-section .ftco-heading,
   .ftco-footer .ftco-heading {
-    font-size: 40px;
+    font-size: 2.5em;
     line-height: 1.5; }
     @media screen and (max-width: 768px) {
       .ftco-section .ftco-heading,
       .ftco-footer .ftco-heading {
-        font-size: 30px; } }
+        font-size: 1.875em; } }
   .ftco-section.bg-light,
   .ftco-footer.bg-light {
     background: #f2f2f2 !important; }
@@ -289,7 +315,7 @@ textarea {
   background: #263135; }
 
 .ftco-footer {
-  font-size: 16px; }
+  font-size: 1em; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em; }
@@ -302,9 +328,9 @@ textarea {
     .ftco-footer a:hover {
       color: #4586FF; }
   .ftco-footer .ftco-heading {
-    font-size: 24px; }
+    font-size: 2em; }
   .ftco-footer .ftco-heading-2 {
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: bold;
     letter-spacing: .05em;
     text-transform: uppercase;
@@ -314,7 +340,7 @@ textarea {
   position: relative; }
   .ftco-pricing-popular .popular-text {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.875em;
     margin-top: -16px;
     right: 0;
     background: #4586FF;
@@ -327,18 +353,18 @@ textarea {
     letter-spacing: .1em; }
 
 .ftco-pricing h2 {
-  font-size: 17px;
+  font-size: 1.0625em;
   text-transform: uppercase; }
 
 .ftco-pricing .ftco-price-per {
-  font-size: 70px; }
+  font-size: 4.375em; }
   .ftco-pricing .ftco-price-per sup {
-    font-size: 20px;
+    font-size: 1.25em;
     top: -1.5em; }
   .ftco-pricing .ftco-price-per strong {
     color: #000; }
   .ftco-pricing .ftco-price-per span {
-    font-size: 20px; }
+    font-size: 1.25em; }
 
 .ftco-pricing ul li {
   margin-bottom: 10px; }
@@ -357,7 +383,7 @@ textarea {
     position: relative; }
     .ftco-footer-social li a span {
       position: absolute;
-      font-size: 26px;
+      font-size: 1.625em;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
@@ -409,7 +435,7 @@ textarea {
     .ftco-owl .owl-nav .owl-prev,
     .ftco-owl .owl-nav .owl-next {
       position: absolute;
-      font-size: 30px;
+      font-size: 1.875em;
       background: #4586FF;
       color: #fff;
       padding: 10px;
@@ -444,12 +470,12 @@ textarea {
 
 .ftco-counter .ftco-number {
   display: block;
-  font-size: 72px;
+  font-size: 4.5em;
   font-weight: bold;
   color: #4586FF; }
 
 .ftco-counter .ftco-label {
-  font-size: 12px;
+  font-size: 0.75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   color: #b3b3b3; }

@@ -573,3 +573,36 @@ textarea {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+  .timeline ul {
+    list-style: none;
+    text-align: left;
+  }
+  .timeline li {
+    position: relative;
+    padding: 2px 2px 1px 20px;
+  }
+  .timeline li a {
+    color: gray;
+  }
+  .timeline li:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #D8D8D8;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-40%);
+  }
+  .timeline li:not(:last-child):after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #D8D8D8;
+    position: absolute;
+    left: -9px;
+    top: 50%;
+  }

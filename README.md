@@ -1,4 +1,3 @@
-# Eventpage
+# wedding event page
 
-This is the single page static website used for my wedding invitation.  Based on the template:
-https://themewagon.com/themes/free-bootstrap-4-one-page-template-exclusivity/
+Simple single-page website used to share information about a wedding.  Based on the [Exclusivity](https://themewagon.com/themes/free-bootstrap-4-one-page-template-exclusivity/).

@@ -35,6 +35,10 @@ h1, h2, h3, h4, h5,
   font-weight: normal;
   color: #000; }
 
+.res {
+  font-size: 1.5em;
+}
+
 .text-primary {
   color: #4586FF !important; }
 
